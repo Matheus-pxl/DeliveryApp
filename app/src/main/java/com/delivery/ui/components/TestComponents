@@ -1,0 +1,71 @@
+
+
+@Preview(showBackground = true)
+@Composable
+fun ColumnPreview(){
+    Column (){
+        Text("texto 1")
+        Text("texto 2")
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun RowPreview() {
+    Row {
+        Text("texto 1")
+        Text("texto 2")
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun BoxPreview() {
+    Box {
+        Text("Texto 1")
+        Text("Texto 2")
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun CustomLayoutPreview() {
+    Column (
+        Modifier
+            .padding(all = 8.dp)
+            .background(color = androidx.compose.ui.graphics.Color.Blue)){
+        Text("Texto 1")
+        Text("Texto 3")
+        Row (modifier = Modifier
+            .padding(
+                horizontal = 8.dp,
+                vertical = 8.dp
+            )
+            .background(color = androidx.compose.ui.graphics.Color.Green)){
+            Text("Texto 1")
+            Text("Texto 4")
+        }
+        Box(modifier= Modifier
+            .padding(8.dp)
+            .background(color = androidx.compose.ui.graphics.Color.Red)) {
+            Text("TExto 1")
+            Text("TExto 5")
+        }
+    }
+}
+@Preview(showBackground = true)
+@Composable
+fun MyFirstCompose() {
+    Text(text = "my first composable")
+    Text(text = "my first compossdasdojasdo")
+    Text(text = "myasdjdqdomposable")
+}
+@Composable
+fun MyFirstComposePreview() {
+    DeliveryTheme {
+        Surface {
+            MyFirstCompose()
+
+        }
+    }
+}
