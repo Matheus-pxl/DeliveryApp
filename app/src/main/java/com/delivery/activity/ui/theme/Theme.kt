@@ -1,4 +1,4 @@
-package com.delivery.ui.activity.ui.theme
+package com.delivery.activity.ui.theme
 
 import android.app.Activity
 import android.os.Build
